@@ -6,11 +6,14 @@ body {
 
 body {
   min-width: 320px;
-  background-color: #ffffff;
   font-size: 17px;
   line-height: 1.7;
   font-family: "Fira Sans", "Arial", sans-serif;
   color: #000000;
+  background-color: #ffffff;
+  background-image: url("../../img/bg-hero.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 img {
