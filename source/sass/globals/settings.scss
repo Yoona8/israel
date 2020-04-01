@@ -47,7 +47,7 @@ img {
 
 @media (max-width: 1360px) {
   body {
-    background-position: top center;
+    background-position: center top;
   }
 }
 
@@ -55,6 +55,7 @@ img {
   body {
     background-image: url("../img/bg-hero-small.jpg");
     background-size: 912px auto;
+    background-position: center 33px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

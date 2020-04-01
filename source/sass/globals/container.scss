@@ -1,6 +1,11 @@
 .container {
-  min-width: 320px;
   max-width: 1142px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+@media (max-width: $mobile-width) {
+  .container {
+    padding: 0 16px;
+  }
 }
