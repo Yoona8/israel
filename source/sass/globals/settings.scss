@@ -11,7 +11,7 @@ body {
   font-family: "Fira Sans", "Arial", sans-serif;
   color: $black;
   background-color: #ffffff;
-  background-size: 100%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
 }
 
@@ -33,6 +33,18 @@ img {
   overflow: hidden;
 }
 
+@media (max-width: 1360px) {
+  body {
+    background-position: center top;
+  }
+}
+
+@media (min-width: 1360px) {
+  body {
+    background-size: 100%;
+  }
+}
+
 @media (min-width: $from-tablet-width) {
   body {
     background-image: url("../img/bg-hero.jpg");
@@ -42,12 +54,6 @@ img {
     body {
       background-image: url("../img/bg-hero@2x.jpg");
     }
-  }
-}
-
-@media (max-width: 1360px) {
-  body {
-    background-position: center top;
   }
 }
 

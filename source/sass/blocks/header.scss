@@ -23,9 +23,12 @@
 .header__logo {
   width: 137px;
   height: 48px;
+  margin-right: 23px;
 }
 
 .header__callback-link {
+  font-size: 13px;
+  letter-spacing: 0.2px;
   color: $black;
   text-decoration: none;
   text-transform: uppercase;
@@ -55,7 +58,6 @@
     width: 120px;
     height: 42px;
     margin-bottom: -16px;
-    padding-right: 45px;
   }
 
   .header__callback {
@@ -64,5 +66,9 @@
     width: 100%;
     margin-right: 1px;
     font-size: 13px;
+  }
+
+  .header__callback-link {
+    letter-spacing: normal;
   }
 }
