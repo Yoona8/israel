@@ -34,5 +34,44 @@
       </a>
     </section>
   </main>
+  <div class="modal-overlay"></div>
+  <form class="callback modal modal--opened">
+    <button class="modal__close" type="button">
+      <span class="visually-hidden">Закрыть форму</span>
+    </button>
+    <h2 class="modal__title">Заказать звонок</h2>
+    <p class="modal__description">
+      Оставьте ваши контактные данные,
+      мы свяжемся  с вами в течение рабочего дня
+      и обязательно поможем найти ответ на ваш вопрос!
+    </p>
+    <ul class="callback__fields">
+      <li class="callback__field input">
+        <input class="input__field" type="text" id="username" placeholder="Имя">
+        <label class="input__label" for="username">Имя</label>
+      </li>
+      <li class="callback__field input">
+        <input class="input__field" type="text" id="phone" placeholder="Телефон">
+        <label class="input__label" for="phone">Телефон</label>
+      </li>
+    </ul>
+    <button class="button" type="submit">Перезвоните мне</button>
+    <p class="callback__agreement checkbox">
+      <input class="checkbox__check visually-hidden" type="checkbox" id="agreement">
+      <label class="checkbox__label" for="agreement">
+        Нажимая на кнопку, вы даёте согласие на обработку персональных данных
+      </label>
+    </p>
+  </form>
+  <section class="success modal modal--closed">
+    <button class="modal__close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+    <h2 class="success__title modal__title">Заявка принята</h2>
+    <p class="modal__description">
+      Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!
+    </p>
+    <button class="button" type="button">Понятно</button>
+  </section>
 </body>
 </html>
