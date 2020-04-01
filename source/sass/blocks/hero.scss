@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 538px;
+  padding-top: 416px;
   padding-bottom: 146px;
 }
 
@@ -9,7 +9,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
-  color: #ffffff;
+  color: $white;
   text-align: center;
 }
 
@@ -19,7 +19,7 @@
   width: 76px;
   height: 76px;
   margin: 0 auto calc(131px - 76px);
-  background-image: url("../../img/dashed-round.svg");
+  background-image: url("../img/dashed-round.svg");
   background-repeat: no-repeat;
   background-size: 76px 76px;
   background-position: top center;
@@ -34,12 +34,12 @@
   height: 52px;
   margin-top: -27px;
   margin-left: -27px;
-  background-image: url("../../img/icon-mouse.png");
+  background-image: url("../img/icon-mouse.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 17px 26px;
   border-radius: 50%;
-  border: 1px solid #ffffff;
+  border: 1px solid $white;
 }
 
 .hero__scroll-indicator::after {
@@ -49,5 +49,5 @@
   left: 50%;
   width: 1px;
   height: 55px;
-  background-color: #ffffff;
+  background-color: $white;
 }

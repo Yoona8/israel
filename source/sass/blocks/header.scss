@@ -1,5 +1,4 @@
 .header {
-  position: absolute;
   width: 100%;
   padding: 32px 0;
   font-weight: 500;
@@ -13,22 +12,22 @@
 }
 
 .header__tel {
-  color: #000000;
+  color: $black;
   text-decoration: none;
 }
 
 .header__tel:hover {
-  color: #ffc341;
+  color: $yellow;
 }
 
 .header__callback {
-  color: #000000;
+  color: $black;
   text-decoration: none;
   text-transform: uppercase;
-  border-bottom: 1px dashed #000000;
+  border-bottom: 1px dashed $black;
 }
 
 .header__callback:hover {
-  color: #ffc341;
-  border-color: #ffc341;
+  color: $yellow;
+  border-color: $yellow;
 }

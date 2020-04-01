@@ -9,9 +9,9 @@ body {
   font-size: 17px;
   line-height: 1.7;
   font-family: "Fira Sans", "Arial", sans-serif;
-  color: #000000;
+  color: $black;
   background-color: #ffffff;
-  background-image: url("../../img/bg-hero.jpg");
+  background-image: url("../img/bg-hero.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -32,4 +32,18 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (max-width: 1360px) {
+  body {
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  body {
+    background-image: url("../img/bg-hero-small.jpg");
+    background-position: center;
+  }
 }
