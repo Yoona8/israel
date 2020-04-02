@@ -1,0 +1,21 @@
+.content h2 {
+  margin: 0 0 24px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: $lightblue;
+  text-transform: uppercase;
+}
+
+.content p {
+  margin: 0 0 14px;
+}
+
+.content a {
+  color: $lightblue;
+}
+
+.content a:hover {
+  text-decoration: none;
+}
