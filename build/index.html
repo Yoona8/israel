@@ -42,12 +42,17 @@
     </p>
     <ul class="callback__fields">
       <li class="callback__field input">
-        <input class="input__field" type="text" id="username" placeholder="Имя">
-        <label class="input__label" for="username">Имя</label>
+        <input class="input__field" type="text" id="username" placeholder="Имя" required="">
+        <label class="input__label" for="username">
+          <span class="visually-hidden">Имя</span>
+        </label>
       </li>
       <li class="callback__field input">
-        <input class="input__field" type="text" id="phone" placeholder="Телефон">
-        <label class="input__label" for="phone">Телефон</label>
+        <input class="input__field" type="text" id="phone" placeholder="Телефон" required="">
+        <!-- <span class="input__error">Error text here</span> -->
+        <label class="input__label" for="phone">
+          <span class="visually-hidden">Телефон</span>
+        </label>
       </li>
     </ul>
     <button class="button" type="submit">Перезвоните мне</button>
