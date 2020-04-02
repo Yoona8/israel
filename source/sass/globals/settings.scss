@@ -11,8 +11,6 @@ body {
   font-family: "Fira Sans", "Arial", sans-serif;
   color: $black;
   background-color: #ffffff;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
 }
 
 img {
@@ -32,42 +30,4 @@ input.visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@media (max-width: 1360px) {
-  body {
-    background-position: center top;
-  }
-}
-
-@media (min-width: 1360px) {
-  body {
-    background-size: 100%;
-  }
-}
-
-@media (min-width: $from-tablet-width) {
-  body {
-    background-image: url("../img/bg-hero.jpg");
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    body {
-      background-image: url("../img/bg-hero@2x.jpg");
-    }
-  }
-}
-
-@media (max-width: $mobile-width) {
-  body {
-    background-image: url("../img/bg-hero-small.jpg");
-    background-size: 912px auto;
-    background-position: center 33px;
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    body {
-      background-image: url("../img/bg-hero-small@2x.jpg");
-    }
-  }
 }
