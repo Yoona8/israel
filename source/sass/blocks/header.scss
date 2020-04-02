@@ -14,6 +14,7 @@
 .header__tel {
   color: $black;
   text-decoration: none;
+  transition: $hover-focus-transition;
 }
 
 .header__tel:hover {
@@ -40,6 +41,7 @@
   text-decoration: none;
   text-transform: uppercase;
   border-bottom: 1px dashed $black;
+  transition: $hover-focus-transition;
 }
 
 .header__callback:hover {

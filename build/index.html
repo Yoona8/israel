@@ -14,63 +14,58 @@
         +&nbsp;(972)&nbsp;2&nbsp;–&nbsp;621&nbsp;–&nbsp;6581
       </a>
       <a class="header__logo">
+        <!-- 1x: 137px; 2x: 274px -->
         <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="137" height="48" alt="Логотип Masa Israel Journey">
       </a>
       <a class="header__callback" href="#">Заказать звонок</a>
     </div>
   </header>
+
   <main class="main">
     <section class="hero">
       <h1 class="visually-hidden">Учебные программы и стажировки в Израиле</h1>
-      <p class="hero__description">
+      <p>
         Учёба, путешествие и карьера
         для еврейской молодёжи
       </p>
-      <a class="hero__scroll-indicator">
-        <span class="visually-hidden">Читать далее</span>
-      </a>
+      <a class="hero__scroll-indicator" href="#" aria-label="Читать далее"></a>
     </section>
   </main>
+
   <div class="modal-overlay"></div>
+
   <form class="callback modal modal--closed">
-    <button class="modal__close" type="button">
-      <span class="visually-hidden">Закрыть форму</span>
-    </button>
-    <h2 class="modal__title">Заказать звонок</h2>
-    <p class="modal__description">
+    <button class="modal__close" type="button" aria-label="Закрыть форму"></button>
+    <h2>Заказать звонок</h2>
+    <p>
       Оставьте ваши контактные данные,
       мы свяжемся  с вами в течение рабочего дня
       и обязательно поможем найти ответ на ваш вопрос!
     </p>
     <ul class="callback__fields">
       <li class="callback__field input">
-        <input class="input__field" type="text" id="username" placeholder="Имя" required="">
-        <label class="input__label" for="username">
-          <span class="visually-hidden">Имя</span>
-        </label>
+        <input type="text" id="username" placeholder="Имя">
+        <label for="username" aria-label="Имя"></label>
       </li>
       <li class="callback__field input">
-        <input class="input__field" type="text" id="phone" placeholder="Телефон" required="">
+        <input type="text" id="phone" placeholder="Телефон" required="">
         <!-- <span class="input__error">Error text here</span> -->
-        <label class="input__label" for="phone">
-          <span class="visually-hidden">Телефон</span>
-        </label>
+        <label for="phone" aria-label="Телефон"></label>
       </li>
     </ul>
     <button class="button" type="submit">Перезвоните мне</button>
     <p class="callback__agreement checkbox">
-      <input class="checkbox__check visually-hidden" type="checkbox" id="agreement">
-      <label class="checkbox__label" for="agreement">
+      <input class="visually-hidden" type="checkbox" id="agreement">
+      <label for="agreement">
         Нажимая на кнопку, вы даёте согласие на обработку персональных данных
       </label>
     </p>
   </form>
+
   <section class="success modal modal--closed">
-    <button class="modal__close" type="button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
-    <h2 class="success__title modal__title">Заявка принята</h2>
-    <p class="modal__description">
+    <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    <h2>Заявка принята</h2>
+    <p>
       Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!
     </p>
     <button class="button" type="button">Понятно</button>

@@ -3,7 +3,7 @@
   margin-bottom: 28px;
 }
 
-.input__field {
+.input input {
   width: 100%;
   padding: 13px 40px 14px;
   font: inherit;
@@ -14,30 +14,34 @@
   border-radius: 80px;
   background-clip: padding-box;
   box-sizing: border-box;
+  transition: $hover-focus-transition;
 }
 
-.input__field::placeholder {
+.input input::placeholder {
   color: rgba($black, 0.5);
 }
 
-.input__field:valid {
+.input input:not(:placeholder-shown):not(:focus):valid {
   border-color: rgba($black, 0.5);
 }
 
-.input__field:not(:placeholder-shown):invalid {
+.input input:not(:placeholder-shown):invalid {
   border-color: rgba($red, 0.5);
 }
 
-.input__field:focus {
+.input input:focus,
+.input input:not(:invalid):hover,
+.input input:placeholder-shown:hover {
   outline: none;
   border-color: transparent;
 }
 
-.input__field:focus ~ .input__label::before {
-  background-image: $yellow-gradient;
+.input input:focus ~ label::before,
+.input input:hover ~ label::before {
+  opacity: 1;
 }
 
-.input__label {
+.input label {
   position: absolute;
   top: 0;
   left: 0;
@@ -46,13 +50,16 @@
   height: 100%;
 }
 
-.input__label::before {
+.input label::before {
   content: "";
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
   border-radius: 80px;
+  background-image: $yellow-gradient;
+  opacity: 0;
+  transition: $hover-focus-transition;
 }
 
 .input__error {

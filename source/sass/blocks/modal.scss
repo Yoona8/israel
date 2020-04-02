@@ -36,7 +36,7 @@
   cursor: pointer;
 }
 
-.modal__title {
+.modal h2 {
   margin: 0 0 16px;
   font-size: 28px;
   line-height: 1.2;
@@ -44,7 +44,7 @@
   color: $lightblue;
 }
 
-.modal__description {
+.modal p {
   margin: 0 0 32px;
   font-size: 15px;
   color: rgba($black, 0.87);
